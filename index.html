@@ -4,244 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        *{
-            margin:0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-        #head{
-            border:2px solid red;
-            display: grid;
-            grid-template-columns: 1fr 2fr 1fr;
-            background-color:red;
-          
-        }
-        #academyLogo{
-            height:120px;
-            border:2px solid red;
-        }
-        #tittle{
-            margin-top: 0px;
-            
-            font-size: 3rem;
-            /* border:2px solid rgb(0, 255, 72); */
-            padding-top: 0px;
-            align-items: center;
-            text-align: center;
-        }
-        #subtittle{
-            font-size: 2rem;
-        }
-        .login{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-        .btn{
-            margin:10px;
-            margin-top:50px;
-            margin-left: 30px;
-            border: 2px solid blue;
-            padding:10px;
-            padding-left: 30px;
-            padding-right: 30px;
-            background-color: rgb(117, 202, 20);
-            border-radius: 20px;
-        }
-        #navbar{
-            /* margin-top: 10px; */
-            list-style: none;
-            text-decoration: none;
-            background-color: rgb(185, 136, 23);
-            /* border: 2px solid green; */
-        }
-        #navbar ul{
-            /* border: 2px solid blue; */
-            margin:0px;
-            display:flex;
-            list-style: none;
-            margin-left: 10px;
-            
-        }
-        #navbar ul li{
-            border:2px solid rgb(225, 65, 132);
-            border-radius: 20px;
-            background-color:rgb(226, 149, 48);
-            padding:10px;
-            padding-left: 40px;
-            padding-right: 40px;
-            margin: 10px;
-            margin-left: 20px;
-            margin-right: 20px;
-            text-decoration: none;
-        }
-        #navbar ul li a{
-            color:white;
-        
-        }
-        .one h1{
-            color:white;
-        }
-        .home{
-            display:grid;
-            grid-template-columns: 1fr 2fr 1fr;
-            height:600px;
-            grid-gap:2rem;
-            background-color: black;
-        }
-        #about{
-            border:2px solid red;
-            height:500px;
-            border-radius: 20px;
-            padding:10px;
-            background-color: green;
-        }
-        #gallary{
-            border:2px solid red;
-            height:500px;
-            border-radius: 20px;
-            padding:10px;
-        }
-        #vision{
-            border:2px solid red;
-            height:500px;
-            border-radius: 20px;
-            padding:10px;
-            background-color: green;
-        }
-body {
-    font-family: Verdana, sans-serif;
-     margin:0
-}
-.mySlides {
-    display: none
-}
-.one h1{
-    text-align: center;
-}
-img {
-    vertical-align: middle;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-
-#footer{
-    border:2px solid red;
-    height:200px;
-    background-color: blue;
-  
-}
-#footer a{
-    
-    color:white;
-}
-</style>
+    <!-- for linking css -->
+    <link rel="stylesheet" href="style.css">  
+    <!-- for linking social media fonts --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
 </head>
-<body>
+  <body>
+
+    <!-- header -->
     <div id="head">
-        <img id="academyLogo" src="logo1.jpeg" alt="sunro academy">
-        
-        <span id="tittle">Sunro Academy<br><span id="subtittle">For quality of education</span></span>
-        
-        <p class="login"><span><button class="btn">Login</button></span><span><button class="btn">Register</button></span></p>
+      <span id="academyLogo">
+        <img id="logo" src="logo1.jpeg" alt="sunro academy">
+      </span>
+      <span class="tittle">
+          <span id="tittle">
+            Sunro Academy
+          </span>
+            <br>
+          <span id="subtittle"> 
+            For quality of education
+          </span> 
+      </span>
     </div>
+
+    <!-- navigation bar -->
     <div>
         <nav id="navbar">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="academic.html">Academic Features</a></li>
-                <li><a href="sports.html">Sports & cultural</a></li>
-                <li><a href="skill.html">Skill</a></li>
-                <li><a href="#">Our team</a></li>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="#">Online admission</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropbtn">Academic Division</a>
+                  <div class="dropdown-content">
+                    <a href="kids.html">kids care</a>
+                    <a href="class1.html">class 1&2</a>
+                    <a href="class3.html">class 3to5</a>
+                    <a href="class6.html">class 6to8</a>
+                    <a href="class9.html">class 9&10</a>
+                    <a href="class11.html">class 11&12</a>
+                  </div>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropbtn">Extracarricular</a>
+                  <div class="dropdown-content">
+                    <a href="sports.html">Sports</a>
+                    <a href="cultural.html">Cultural</a>
+                  </div>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropbtn">Fascilities</a>
+                  <div class="dropdown-content">
+                    <a href="#">library</a>
+                    <a href="#">labs</a>
+                    <a href="#">online resources</a>
+                    <a href="#">computer</a>
+                    <a href="#">transportation</a>
+                    <a href="#">doubt</a>
+                  </div>
+                </li>
+                <li>
+                  <a href="skill.html">Skill</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropbtn">Competetive</a>
+                  <div class="dropdown-content">
+                    <a href="jee.html">JEE</a>
+                    <a href="neet.html">NEET</a>
+                    <a href="upsc.html">UPSC</a>
+                    <a href="other.html">Other</a>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">Login</a>
+                </li>
             </ul>
         </nav>
     </div>
+
+    <!-- home -->
     <div class="home">
         <div class="one">
             <h1>About us</h1>
@@ -253,76 +93,121 @@ img {
             </p>
         </div>
         <div class="one" >
-
-
-            <h1>Gallary</h1>
-            
-            
+            <h1>Gallary</h1>          
             <div class="slideshow-container" id="gallary">
-            
-             <div class="mySlides fade">
-               <div class="numbertext">1 / 3</div>
-               <img src="school1.jpg" height="400px"width="700px">
-               <div class="text">Caption Text</div>
-             </div>
-            
-             <div class="mySlides fade">
-               <div class="numbertext">2 / 3</div>
-               <img src="lab.jpg" height="400px"width="700px">
-               <div class="text">Caption Two</div>
-             </div>
-            
-             <div class="mySlides fade">
-               <div class="numbertext">3 / 3</div>
-               <img src="music.jpg" height="400px"width="700px">
-               <div class="text">Caption Three</div>
-             </div>
-            
-            </div>
-            <br>
-            
-            <div style="text-align:center">
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-            </div>
+              <img  src="school1.jpg" alt="sunro academy">
+            </div>                    
         </div>
         <div class="one">
             <h1>mission &vision</h1><p id="vision">This is vision and mission</p>
         </div>
     </div>
-    <footer id="footer">
-        <h2>Our social media handles</h2>
-        <a href="facebook.com">our facebook handle</a>
-        <a href="instagram.com">our instagram handle</a>
-        <a href="twitter.com">our twitter handle</a>
-        <a href="linkedln.com">our linkedln handle</a>
-    </footer>
-    
 
-    
-            <script>
-                let slideIndex = 0;
-                showSlides();
-                
-                function showSlides() {
-                  let i;
-                  let slides = document.getElementsByClassName("mySlides");
-                  let dots = document.getElementsByClassName("dot");
-                  for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
-                  }
-                  slideIndex++;
-                  if (slideIndex > slides.length) {slideIndex = 1}    
-                  for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                  }
-                  slides[slideIndex-1].style.display = "block";  
-                  dots[slideIndex-1].className += " active";
-                  setTimeout(showSlides, 2000); // Change image every 2 seconds
-                }
-            </script>
-        </div>
+    <!-- footer -->
+    <footer id="footer">
+      <div class="social">
+        <h2>Academics</h2>
+        <ul class="link" id="linkacad">
+          <li>
+            <a href="#">Academic time-table</a>
+          </li>
+          <li>
+            <a href="#">Academic calender</a>
+          </li>
+          <li>
+            <a href="#">Notice</a>
+          </li>
+          <li>
+            <a href="#">Club</a>
+          </li>
+          <li>
+            <a href="#">Faculty</a>
+          </li>
+          <li>
+            <a href="#">Staff</a>
+          </li>
+          <li>
+            <a href="#">Team</a>
+          </li>
+          <li>
+            <a href="#">It cell</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social">
+        <h2>Quick links</h2>
+        <ul class="link" id="link">
+          <li>
+            <a href="#">Admission</a>
+          </li>
+          <li>
+            <a href="#">Entrance exam</a>
+          </li>
+          <li>
+            <a href="#">Result</a>
+          </li>
+          <li>
+            <a href="#">Out team</a>
+          </li>
+          <li>
+            <a href="#">Faculty recruitment</a>
+          </li>
+          <li>
+            <a href="#">Gender cell</a>
+          </li>
+          <li>
+            <a href="#">carrier/job</a>
+          </li>
+          <li>
+            <a href="#">policies</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social">
+        <h2>Contact us</h2>
+        <ul class="link" id="link">
+          <li>
+            <a href="#">contact</a>
+          </li>
+          <li>
+            <a href="#">feedback</a>
+          </li>
+
+        </ul>
+      </div>
+      <div class="social" id="socialMedia">
+        <h2>Our Team</h2>
+        <ul class="link">
+          <li>
+            <a href="#">Faculty corner</a>
+          </li>
+          <li>
+            <a href="#">Staff corner</a>
+          </li>
+          <li>
+            <a href="#">Student corner</a>
+          </li>
+      </div>
+    </footer>
+
+    <!-- social media -->
+    <div class="social" id="socialMedia">
+      <h2>Our social media handles</h2>   
+          <a href="https://www.facebook.com/profile.php?id=100094172095203"class="fa fa-facebook"></a>       
+          <a href="https://www.instagram.com/sunroacademy/" class="fa fa-instagram"></a>
+          <a href="https://twitter.com/sunroacademy" class="fa fa-twitter"></a>       
+          <a href="https://www.youtube.com/channel/UCVgoIRl51mVz6j5GsHpnRzg" class="fa fa-youtube"></a>     
+          <a href="#" class="fa fa-google"></a>      
+          <a href="#" class="fa fa-linkedin"></a>
     </div>
-</body>
+
+    <!-- copyright -->
+    <div class="copyright">
+      <p>
+        © 2023 Copyright:
+        <a href="#">sunroacademy.com</a>
+      </p>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
